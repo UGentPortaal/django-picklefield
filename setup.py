@@ -7,7 +7,7 @@ with open('README.rst') as file_:
 
 setup(
     name='django-picklefield',
-    version=picklefield.__version__,
+    version=picklefield.get_version().replace(' ', '-'),
     description='Pickled object field for Django',
     long_description=long_description,
     author='Simon Charette',
